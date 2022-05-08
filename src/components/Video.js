@@ -1,4 +1,3 @@
-//import './Video.scss';
 import { nanoid } from 'nanoid'
 import PropTypes from 'prop-types';
 import DateTime from './DateTime';

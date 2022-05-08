@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import VideoList from './components/VideoList';
-import moment from 'moment/min/moment-with-locales';
+import moment from 'moment';
 
 
 export default function App() {
-  const [list, setList] = useState([
+  const [list] = useState([
     {
       url: 'https://www.youtube.com/embed/rN6nlNC9WQA?rel=0&amp;controls=0&amp;showinfo=0',
       date: moment().subtract(13, 'seconds').format('YYYY-MM-DD HH:mm:ss')
@@ -35,3 +35,4 @@ export default function App() {
       <VideoList list={list} />
   );
 }
+console.log(moment());
